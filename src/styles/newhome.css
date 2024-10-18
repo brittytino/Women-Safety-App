@@ -1,0 +1,111 @@
+
+:root {
+    --primaryblue-clr: rgb(33, 72, 123);
+    --icewhite-clr: aliceblue;
+}
+.parent {
+    width: 100vw;
+    height: 100%;
+    color: aliceblue;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scroll-snap-type: y mandatory;
+}
+.viewport {
+    height: 100vh;
+    width: 100vw;
+    scroll-snap-align: start;
+    overflow-x: hidden;
+    position: relative;
+}
+.viewport:nth-child(1) {
+    background-image: url("../assets/slider-img.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover ;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 20%;
+    background-color: transparent;
+}
+.viewport:nth-child(2) {
+    display: grid;
+    place-items: center;
+    color: black;
+}
+.viewport:nth-child(3) {
+    position: relative;
+}
+.viewport:nth-child(4) {
+    background-image: url("../assets/img\ -1.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover ;
+    z-index: 5;
+    position: relative;
+}
+/* .viewport:nth-child(4)::after {
+    content: '';
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    background-color: blue;
+    z-index: 1;
+} */
+.viewport:nth-child(5) {
+    color: var(--primaryblue-clr);
+}
+.viewport:nth-child(6) {
+    background-color: var(--primaryblue-clr) ;
+}
+#drugs-pics {
+    height: 150px;
+    margin-right: 0.25ch;
+}
+.slider-item {
+    width: 200px;
+    height: 300px;
+    pointer-events: none;
+}
+.inner-carousel {
+    display: flex;
+    gap: 50px;
+    width: max-content;
+}
+.carousel {
+    cursor: grab;
+    overflow: hidden;
+    width: 1000rem;
+    margin-top: 3em;
+}
+#logo {
+    width: 7em;
+    height: 3em;
+}
+#social-media {
+    width: 1.5em;
+    aspect-ratio: 1;
+}
+.blue {
+    position: absolute;
+    width:  100%;
+    height: 70%;
+    top: 0;
+    left: 0;
+    background-color: var(--primaryblue-clr);
+    z-index: -5;
+}
+#hr {
+    width: 50%;
+    border-radius: 5px;
+    background-color: aliceblue;
+    height: 3px;
+}
+#text-box {
+    width: 16rem;
+}

@@ -1,0 +1,13 @@
+/* loading page styles */
+video {
+    width: 100vw;
+    height: 99vh;
+    place-self: center;
+    z-index: 1;
+    object-fit: fill;
+}
+.loading {
+    position: relative;
+    display: grid;
+    place-items: center;
+}

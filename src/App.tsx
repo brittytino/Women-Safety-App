@@ -1,25 +1,42 @@
-import { Route, Routes } from "react-router-dom";
-import Layout from "./components/layout/Layout";
-import Home from "./pages/home/Home";
-import HowToStart from "./pages/how-to-start/HowToStart";
-import OurService from "./pages/our-service/OurService";
-import Technologies from "./pages/technologies/Technologies";
-import Careers from "./pages/careers/Careers";
-import Contact from "./pages/contact/Contact";
+//Imports
+//React
+import React, { useState } from 'react';
+//Styles
+import './styles/app.css';
+//Components & Routes
+// import { Loading, Home } from './routes/index';
+import Home from './routes/Home';
+import Loading from './routes/Loading';
+import { BrowserRouter as Router, Route, Routes} from "react-router-dom";
+import Menu from './routes/Menu';
+import { exitContext, welcomingContext } from './utils/context';
+import ExploreButton from './components/ExploreButton';
+import NewHome from './routes/NewHome';
 
-export default function App() {
+
+function App() {
+  //states
+  const [welcoming , setWelcoming] = useState<boolean>(true)
+  const [exit , setExit] = useState<boolean>(false)
+  //lifecycle management
+
   return (
-    <>
-      <Layout>
+    <div className='app'>
+      <Router>
+        <welcomingContext.Provider value={{ welcoming, setWelcoming }}>
+          <exitContext.Provider value={{ exit, setExit }}>
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/how-to-start" element={<HowToStart />} />
-          <Route path="/our-service" element={<OurService />} />
-          <Route path="/technologies" element={<Technologies />} />
-          <Route path="/careers" element={<Careers />} />
-          <Route path="/contact" element={<Contact />} />
+            <Route path='/home' element={<Home />} />
+            <Route path='/newhome' element={<NewHome />} />
+            <Route path='/' element={<Loading />} />
+            <Route path='/menu' element={<Menu />} />
+            <Route path='/explorebutton' element={<ExploreButton />} />
         </Routes>
-      </Layout>
-    </>
+          </exitContext.Provider>
+        </welcomingContext.Provider>
+      </Router>
+    </div>
   );
 }
+
+export default App;
