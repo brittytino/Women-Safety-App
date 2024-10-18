@@ -19,7 +19,7 @@ export const Newsletter = () => {
           </span>
         </h3>
         <p className="text-xl text-muted-foreground text-center mt-4 mb-8">
-          Lorem ipsum dolor sit amet consectetur.
+        No spam here! Just essential safety tips and cool updates. Stay informed with the latest safety news delivered right to your inbox!
         </p>
 
         <form

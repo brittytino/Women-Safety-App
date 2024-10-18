@@ -6,7 +6,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import image from "../assets/growth.png";
+import image from "../assets/growth.png"; // Use images that represent your features
 import image3 from "../assets/reflecting.png";
 import image4 from "../assets/looking-ahead.png";
 
@@ -18,22 +18,28 @@ interface FeatureProps {
 
 const features: FeatureProps[] = [
   {
-    title: "Responsive Design",
+    title: "Location Sharing",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nesciunt est nostrum omnis ab sapiente.",
+      "GPS that doesn’t kill your battery, but might save your life. Share your location in real-time with your people. No random disappearing acts.",
     image: image4,
   },
   {
-    title: "Intuitive user interface",
+    title: "Panic Button",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nesciunt est nostrum omnis ab sapiente.",
+      "Instantly alert trusted contacts when things go south. One tap, and it’s ‘help is on the way’ – no need to raise your voice.",
     image: image3,
   },
   {
-    title: "AI-Powered insights",
+    title: "Corporate Safety Mode",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nesciunt est nostrum omnis ab sapiente.",
+      "Because your boss should worry about your safety too, right? We’ve got special tracking for employees, so your commute is never a solo journey.",
     image: image,
+  },
+  {
+    title: "Crowd-Sourced Safety Zones",
+    description:
+      "Who knows best? The crowd. Get the safest route suggestions based on real-time feedback from people on the street. Skip the sketchy lanes.",
+    image: image4, // Reuse or replace with a different image if needed
   },
 ];
 
@@ -75,20 +81,22 @@ export const Features = () => {
         ))}
       </div>
 
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
         {features.map(({ title, description, image }: FeatureProps) => (
-          <Card key={title}>
+          <Card key={title} className="max-w-xs mx-auto">
             <CardHeader>
-              <CardTitle>{title}</CardTitle>
+              <CardTitle className="text-center">{title}</CardTitle>
             </CardHeader>
 
-            <CardContent>{description}</CardContent>
+            <CardContent className="text-sm">
+              {description}
+            </CardContent>
 
             <CardFooter>
               <img
                 src={image}
                 alt="About feature"
-                className="w-[200px] lg:w-[300px] mx-auto"
+                className="w-[150px] lg:w-[200px] mx-auto"
               />
             </CardFooter>
           </Card>

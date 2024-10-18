@@ -20,18 +20,17 @@ export const About = () => {
                 <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
                   About{" "}
                 </span>
-                Company
+                "SHE"
               </h2>
               <p className="text-xl text-muted-foreground mt-4">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit
-                amet, consectetur adipiscing elit.
+              We’re not here to sell you a product; we’re here to create a safer world. SHE is built with love, concern, and some seriously hardcore technology, designed to keep women safe during their daily adventures. Because let’s face it, ‘Safety first’ isn’t just for construction zones.
               </p>
             </div>
 
             <Statistics />
+            <h2 className="text-2xl inline bg-gradient-to-r from-[#177436]  to-[#48ff00] text-transparent bg-clip-text">
+            Don’t you want to be part of something that works?
+              </h2>
           </div>
         </div>
       </div>

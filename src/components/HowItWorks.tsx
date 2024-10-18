@@ -1,36 +1,30 @@
 import { Card, CardContent, CardHeader, CardTitle } from "./ui/card";
-import { MedalIcon, MapIcon, PlaneIcon, GiftIcon } from "../components/Icons";
+import { FaUserCheck, FaMapMarkerAlt, FaExclamationTriangle } from "react-icons/fa"; // Importing icons from react-icons
 
-interface FeatureProps {
+interface StepProps {
   icon: JSX.Element;
   title: string;
   description: string;
 }
 
-const features: FeatureProps[] = [
+const steps: StepProps[] = [
   {
-    icon: <MedalIcon />,
-    title: "Accessibility",
+    icon: <FaUserCheck className="text-4xl text-primary" />, // Icon for registration
+    title: "Register & Set Up Your Contacts",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum quas provident cum",
+      "Create an account and pick your trusted ones. We call them ‘safety partners,’",
   },
   {
-    icon: <MapIcon />,
-    title: "Community",
+    icon: <FaMapMarkerAlt className="text-4xl text-primary" />, // Icon for location sharing
+    title: "Real-Time Location Sharing",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum quas provident cum",
+      "Turn on the GPS and let your peeps know exactly where you are. No more ‘Where are you?’ calls. Trust us, they’ll thank you.",
   },
   {
-    icon: <PlaneIcon />,
-    title: "Scalability",
+    icon: <FaExclamationTriangle className="text-4xl text-primary" />, // Icon for panic button
+    title: "Panic Button",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum quas provident cum",
-  },
-  {
-    icon: <GiftIcon />,
-    title: "Gamification",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum quas provident cum",
+      "When things feel off, hit that panic button. Alerts go out instantly – faster than your anxiety can rise.",
   },
 ];
 
@@ -48,16 +42,12 @@ export const HowItWorks = () => {
         Step-by-Step Guide
       </h2>
       <p className="md:w-3/4 mx-auto mt-4 mb-8 text-xl text-muted-foreground">
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis
-        dolor pariatur sit!
+        A simple guide to keep you and your loved ones safe.
       </p>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-        {features.map(({ icon, title, description }: FeatureProps) => (
-          <Card
-            key={title}
-            className="bg-muted/50"
-          >
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {steps.map(({ icon, title, description }: StepProps) => (
+          <Card key={title} className="bg-muted/50">
             <CardHeader>
               <CardTitle className="grid gap-4 place-items-center">
                 {icon}

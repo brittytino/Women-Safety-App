@@ -13,33 +13,28 @@ interface FAQProps {
 
 const FAQList: FAQProps[] = [
   {
-    question: "Is this template free?",
-    answer: "Yes. It is a free ChadcnUI template.",
+    question: "Is the app really free?",
+    answer: "Free like Wi-Fi at Starbucks! Yes, totally. We make safety accessible because your life isn’t a product we want to sell.",
     value: "item-1",
   },
   {
-    question: "Lorem ipsum dolor sit amet consectetur adipisicing elit?",
-    answer:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint labore quidem quam? Consectetur sapiente iste rerum reiciendis animi nihil nostrum sit quo, modi quod.",
+    question: "What if I forget to share my location?",
+    answer: "No worries! SHE will gently remind you to turn it on because we know you’ve got other things to focus on, like preparing for your next Kollywood binge-watch.",
     value: "item-2",
   },
   {
-    question:
-      "Lorem ipsum dolor sit amet  Consectetur natus dolores minus quibusdam?",
-    answer:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore qui nostrum reiciendis veritatis necessitatibus maxime quis ipsa vitae cumque quo?",
+    question: "How does SHE keep my battery from dying?",
+    answer: "Our GPS is powered by a mix of smart engineering and a sprinkle of magic. We’ve optimized it to be lightweight, so your phone can stay alive – unlike your last phone battery!",
     value: "item-3",
   },
   {
-    question: "Lorem ipsum dolor sit amet, consectetur adipisicing elit?",
-    answer: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+    question: "Is my data safe with SHE?",
+    answer: "Absolutely! Your safety and privacy are our top priorities. We handle your data like a Tamil mother handles her child's secrets—carefully and with love.",
     value: "item-4",
   },
   {
-    question:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur natus?",
-    answer:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint labore quidem quam? Consectetur sapiente iste rerum reiciendis animi nihil nostrum sit quo, modi quod.",
+    question: "Can I use SHE if I'm traveling in Tamil Nadu?",
+    answer: "Yes! SHE is designed to keep you safe wherever you are, even on the vibrant streets of Coimbatore. Just activate the features and feel at ease!",
     value: "item-5",
   },
 ];

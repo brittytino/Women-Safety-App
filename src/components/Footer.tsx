@@ -1,4 +1,4 @@
-import { LogoIcon } from "./Icons";
+import logo from "../assets/favicon2.png"; // Import the logo image
 
 export const Footer = () => {
   return (
@@ -10,15 +10,15 @@ export const Footer = () => {
           <a
             rel="noreferrer noopener"
             href="/"
-            className="font-bold text-xl flex"
+            className="font-bold text-xl flex items-center"
           >
-            <LogoIcon />
-            ShadcnUI/React
+            <img src={logo} alt="SHE Logo" className="h-8 w-auto mr-2" /> {/* Use the logo here */}
+            SHE - Secure in Her Environment
           </a>
         </div>
 
         <div className="flex flex-col gap-2">
-          <h3 className="font-bold text-lg">Follow US</h3>
+          <h3 className="font-bold text-lg">Follow Us</h3>
           <div>
             <a
               rel="noreferrer noopener"
@@ -28,7 +28,6 @@ export const Footer = () => {
               Github
             </a>
           </div>
-
           <div>
             <a
               rel="noreferrer noopener"
@@ -38,7 +37,6 @@ export const Footer = () => {
               Twitter
             </a>
           </div>
-
           <div>
             <a
               rel="noreferrer noopener"
@@ -61,7 +59,6 @@ export const Footer = () => {
               Web
             </a>
           </div>
-
           <div>
             <a
               rel="noreferrer noopener"
@@ -71,7 +68,6 @@ export const Footer = () => {
               Mobile
             </a>
           </div>
-
           <div>
             <a
               rel="noreferrer noopener"
@@ -94,7 +90,6 @@ export const Footer = () => {
               Features
             </a>
           </div>
-
           <div>
             <a
               rel="noreferrer noopener"
@@ -104,7 +99,6 @@ export const Footer = () => {
               Pricing
             </a>
           </div>
-
           <div>
             <a
               rel="noreferrer noopener"
@@ -127,7 +121,6 @@ export const Footer = () => {
               Youtube
             </a>
           </div>
-
           <div>
             <a
               rel="noreferrer noopener"
@@ -137,7 +130,6 @@ export const Footer = () => {
               Discord
             </a>
           </div>
-
           <div>
             <a
               rel="noreferrer noopener"
@@ -152,14 +144,14 @@ export const Footer = () => {
 
       <section className="container pb-14 text-center">
         <h3>
-          &copy; 2024 Landing page made by{" "}
+          &copy; Designed with care, technology, and a commitment to vigilance by{" "}
           <a
             rel="noreferrer noopener"
             target="_blank"
-            href="https://www.linkedin.com/in/leopoldo-miranda/"
+            href="https://protecther.vercel.app/"
             className="text-primary transition-all border-primary hover:border-b-2"
           >
-            Leo Miranda
+            ProtectHer
           </a>
         </h3>
       </section>

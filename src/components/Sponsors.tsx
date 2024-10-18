@@ -1,37 +1,3 @@
-import { Radar } from "lucide-react";
-
-interface SponsorProps {
-  icon: JSX.Element;
-  name: string;
-}
-
-const sponsors: SponsorProps[] = [
-  {
-    icon: <Radar size={34} />,
-    name: "Sponsor 1",
-  },
-  {
-    icon: <Radar size={34} />,
-    name: "Sponsor 2",
-  },
-  {
-    icon: <Radar size={34} />,
-    name: "Sponsor 3",
-  },
-  {
-    icon: <Radar size={34} />,
-    name: "Sponsor 4",
-  },
-  {
-    icon: <Radar size={34} />,
-    name: "Sponsor 5",
-  },
-  {
-    icon: <Radar size={34} />,
-    name: "Sponsor 6",
-  },
-];
-
 export const Sponsors = () => {
   return (
     <section
@@ -39,19 +5,25 @@ export const Sponsors = () => {
       className="container pt-24 sm:py-32"
     >
       <h2 className="text-center text-md lg:text-xl font-bold mb-8 text-primary">
-        Investors and founders
+        Our Vision
       </h2>
 
-      <div className="flex flex-wrap justify-center items-center gap-4 md:gap-8">
-        {sponsors.map(({ icon, name }: SponsorProps) => (
-          <div
-            key={name}
-            className="flex items-center gap-1 text-muted-foreground/60"
-          >
-            <span>{icon}</span>
-            <h3 className="text-xl  font-bold">{name}</h3>
-          </div>
-        ))}
+      <div className="bg-gray-50 shadow-md rounded-lg p-8 max-w-xl mx-auto mb-8 border border-gray-200">
+        <p className="text-center text-lg lg:text-xl text-gray-700 mb-4">
+          Right now, we’re open for contributions. In the future? We’re looking to partner with businesses who don’t just talk about safety but invest in it. The journey’s just starting!
+        </p>
+
+        <div className="flex justify-center">
+          <button className="bg-primary text-white py-3 px-6 rounded-full shadow hover:bg-primary-dark transition transform hover:scale-105">
+            Get Involved
+          </button>
+        </div>
+      </div>
+
+      <div className="flex justify-center mt-8">
+        <p className="text-gray-600 text-sm italic">
+          Join us in making a difference!
+        </p>
       </div>
     </section>
   );

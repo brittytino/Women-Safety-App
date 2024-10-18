@@ -1,5 +1,5 @@
 import { Card, CardDescription, CardHeader, CardTitle } from "./ui/card";
-import { MagnifierIcon, WalletIcon, ChartIcon } from "./Icons";
+import { FaMapMarkerAlt, FaBell, FaShieldAlt } from 'react-icons/fa'; // Importing icons from Font Awesome
 import cubeLeg from "../assets/cube-leg.png";
 
 interface ServiceProps {
@@ -10,22 +10,22 @@ interface ServiceProps {
 
 const serviceList: ServiceProps[] = [
   {
-    title: "Code Collaboration",
+    title: "Real-Time Location Sharing",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nesciunt est nostrum omnis ab sapiente.",
-    icon: <ChartIcon />,
+      "Always keep your loved ones in the loop with our real-time GPS tracking. Never wander off the radar again, because guess what? They care (a lot).",
+    icon: <FaMapMarkerAlt className="w-6 h-6 text-primary" />, // Location marker icon
   },
   {
-    title: "Project Management",
+    title: "Panic Button Alerts",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nesciunt est nostrum omnis ab sapiente.",
-    icon: <WalletIcon />,
+      "One tap. That’s all it takes to send an SOS alert to your trusted contacts. No need to scream or fumble through apps when you’re in danger – just hit the panic button.",
+    icon: <FaBell className="w-6 h-6 text-primary" />, // Bell icon
   },
   {
-    title: "Task Automation",
+    title: "Safe Route Suggestions",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nesciunt est nostrum omnis ab sapiente.",
-    icon: <MagnifierIcon />,
+      "Why take the risky path when you can have real-time, crowd-sourced safe routes? Let our tech guide you through the streets, leaving the shady shortcuts behind.",
+    icon: <FaShieldAlt className="w-6 h-6 text-primary" />, // Shield icon
   },
 ];
 
@@ -36,14 +36,13 @@ export const Services = () => {
         <div>
           <h2 className="text-3xl md:text-4xl font-bold">
             <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
-              Client-Centric{" "}
+              Women's Safety-Centric{" "}
             </span>
             Services
           </h2>
 
           <p className="text-muted-foreground text-xl mt-4 mb-8 ">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis
-            dolor.
+            Ensuring safety and peace of mind for women.
           </p>
 
           <div className="flex flex-col gap-8">
