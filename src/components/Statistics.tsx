@@ -13,10 +13,6 @@ export const Statistics = () => {
       quantity: "95%",
       description: "report feeling safer",
     },
-    {
-      quantity: "1 in 5 users",
-      description: "utilized panic button",
-    },
   ];
 
   return (
