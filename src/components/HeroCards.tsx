@@ -96,7 +96,7 @@ export const HeroCards = () => {
         </CardHeader>
 
         <CardContent>
-          <Button className="w-full">Start Free Trial</Button>
+          <Button className="w-full"><a href="#pricing">Start Free Trial</a></Button>
         </CardContent>
 
         <hr className="w-4/5 m-auto mb-4" />
