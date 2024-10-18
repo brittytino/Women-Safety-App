@@ -17,37 +17,37 @@ interface TestimonialProps {
 
 const testimonials: TestimonialProps[] = [
   {
-    image: "https://randomuser.me/api/portraits/women/1.jpg",
+    image: "https://img.freepik.com/free-photo/medium-shot-mother-holding-cute-baby_23-2150412205.jpg?w=740",
     name: "Maya",
     userName: "@maya_28",
     comment: "SHE saved my day! I felt safe walking home from work at night, knowing my sister could track my route. No more texting her every 5 minutes!",
   },
   {
-    image: "https://randomuser.me/api/portraits/women/2.jpg",
+    image: "https://img.freepik.com/free-photo/realistic-people-celebrating-gudi-padwa_23-2151248452.jpg?w=740",
     name: "Priya",
     userName: "@priya_24",
     comment: "I used the panic button when I felt unsafe, and my friends got the alert immediately. It’s like having a security team in your pocket!",
   },
   {
-    image: "https://randomuser.me/api/portraits/men/1.jpg",
+    image: "https://img.freepik.com/free-photo/portrait-indian-man-with-beverage_23-2150913300.jpg?w=740",
     name: "Rajesh",
     userName: "@rajesh_hr",
     comment: "Our company uses SHE for employee safety. Knowing our team is protected during commutes is a huge relief!",
   },
   {
-    image: "https://randomuser.me/api/portraits/women/3.jpg",
+    image: "https://img.freepik.com/free-photo/woman-celebrating-indian-republic-day_23-2151142257.jpg?w=826",
     name: "Anjali",
     userName: "@anjali_30",
     comment: "Thanks to SHE, I can share my location with my parents when I'm out late. It gives them peace of mind!",
   },
   {
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
+    image: "https://img.freepik.com/free-photo/woman-celebrating-indian-republic-day_23-2151142581.jpg?w=826",
     name: "Lakshmi",
     userName: "@lakshmi_22",
     comment: "I love the community safety features. Knowing I can contribute to safer routes is empowering!",
   },
   {
-    image: "https://randomuser.me/api/portraits/men/2.jpg",
+    image: "https://img.freepik.com/free-photo/portrait-man-playing-poker-casino_23-2151831228.jpg?w=900",
     name: "Suresh",
     userName: "@suresh_35",
     comment: "I feel more secure during my daily commute with SHE's tracking. It’s a game-changer!",
@@ -56,10 +56,7 @@ const testimonials: TestimonialProps[] = [
 
 export const Testimonials = () => {
   return (
-    <section
-      id="testimonials"
-      className="container py-24 sm:py-32"
-    >
+    <section id="testimonials" className="container py-24 sm:py-32">
       <h2 className="text-3xl md:text-4xl font-bold text-center">
         Discover Why
         <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
@@ -75,17 +72,15 @@ export const Testimonials = () => {
 
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mx-auto">
         {testimonials.map(({ image, name, userName, comment }: TestimonialProps) => (
-          <Card
-            key={userName}
-            className="max-w-md md:break-inside-avoid overflow-hidden"
-          >
+          <Card key={userName} className="max-w-md md:break-inside-avoid overflow-hidden">
             <CardHeader className="flex flex-row items-center gap-4 pb-2">
-              <Avatar>
+              <Avatar className="w-12 h-12 border-2 border-primary rounded-full overflow-hidden">
                 <AvatarImage
                   alt=""
                   src={image}
+                  className="object-cover w-full h-full"
                 />
-                <AvatarFallback>OM</AvatarFallback>
+                <AvatarFallback className="bg-gray-200 text-gray-500">OM</AvatarFallback>
               </Avatar>
 
               <div className="flex flex-col">
