@@ -56,10 +56,10 @@ export const HeroCards = () => {
 
   <CardFooter className="flex justify-center w-full">
     <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 w-full">
-      <Button className="w-full md:w-1/2">Login</Button>
+      <Button className="w-full md:w-1/2"><a href="https://she-protect-her.vercel.app/login">Login</a></Button>
       <a
         rel="noreferrer noopener"
-        href="#"
+        href="https://she-protect-her.vercel.app/register"
         target="_blank"
         className={`w-full md:w-1/2 ${buttonVariants({
           variant: "outline",
