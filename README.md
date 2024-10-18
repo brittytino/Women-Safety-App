@@ -1,146 +1,36 @@
-# Gender Data Web App
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Overview
-The **Gender Data Gap App** is a comprehensive web application designed to support women* in their daily lives by providing crucial information and a platform for sharing experiences. The app includes sections on everyday knowledge, period-related information. It is built with React and focuses on sustainability and energy efficiency with a dark-themed design.
+## Getting Started
 
-## Disclaimer
-Please note that this application is still in development. There are known minor bugs that need to be fixed, and the database integration is not yet completed. I am actively working to address these issues in upcoming updates.
+First, run the development server:
 
-## Features
-- **Home**: Introduction to the app and its purpose.
-- **Knowledge:** Tips and information on various everyday topics, such as driving safety.
-- **Support offers:** Provides  available support services, such as counseling or helplines etc..
-- **Downloads:** Various resources that users can download, such as recipes, guides, or informational PDFs.
-- **Contact:** Details about the app's creator and ways to get in touch.
-
- ## Installation
-To run this project locally, follow these steps:
-
-1. **Clone the repository:**
-```bash
-git clone https://github.com/your-username/gender-data-gap-app.git
-```
-
-3. **Navigate to the project directory:**
-```bash
-cd gender-data-gap-app
-```
-5. **Install the dependencies:**
-```bash
-npm install
-```
-
-6. **Start the development server:**
 ```bash
 npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
 ```
-## Technologies Used
-- React: JavaScript library for building user interfaces.
-- Vite: Next-generation front-end tool for faster and leaner development.
-- TypeScript: Typed superset of JavaScript that compiles to plain JavaScript.
-- CSS: Styling the application with a focus on a dark, energy-efficient theme.
-- React Router: Library for routing in React applications
 
-## Directory Structure
-```bash
-gender-data-app/
-│
-├── node_modules/
-│
-├── public/
-│   ├── assets/
-│   │   ├── PeriodenTeeRezept.pdf
-│   │   ├── PeriodTeaRecipe.pdf
-│   │   ├── index.html
-│   │   └── vite.svg
-│
-├── src/
-│   ├── assets/
-│   │   └── react.svg
-│   ├── components/
-│   │   ├── AboutUs.tsx
-│   │   ├── ArticleItem.tsx
-│   │   ├── BlogPosts.tsx
-│   │   ├── BookItem.tsx
-│   │   ├── CategoryList.tsx
-│   │   ├── DisclaimerBanner.tsx
-│   │   ├── DownloadButton.tsx
-│   │   ├── DownloadCard.tsx
-│   │   ├── Footer.tsx
-│   │   ├── FormInput.tsx
-│   │   ├── FormTextarea.tsx
-│   │   ├── Header.tsx
-│   │   ├── HeroElement.tsx
-│   │   ├── MapSupport.tsx
-│   │   ├── MediaTypeList.tsx
-│   │   ├── OutpatientClinicInfo.tsx
-│   │   ├── ScrollToTopButton.tsx
-│   │   ├── SearchBar.tsx
-│   │   ├── Section.tsx
-│   │   ├── Sidebar.tsx
-│   │   ├── SupportCard.tsx
-│   │   └── VideoItem.tsx
-│   ├── data/
-│   │   ├── clinicForVictims.json
-│   │   ├── data.json
-│   │   ├── downloadContent.json
-│   │   └── supportCards.json
-│   ├── hooks/
-│   │   ├── useCategories.ts
-│   │   ├── useContactForm.tsx
-│   │   ├── useDownloadProgress.ts
-│   │   ├── useFilteredContents.ts
-│   │   ├── useScrollToTop.ts
-│   │   ├── useToggleExpand.ts
-│   │   └── useWindowSize.ts
-│   ├── pages/
-│   │   ├── Contact.tsx
-│   │   ├── Downloads.tsx
-│   │   ├── Home.tsx
-│   │   ├── Knowledge.tsx
-│   │   └── Support.tsx
-│   ├── styles/
-│   │   ├── aboutUs.css
-│   │   ├── blogPosts.css
-│   │   ├── button.css
-│   │   ├── contact.css
-│   │   ├── disclaimerBanner.css
-│   │   ├── download.css
-│   │   ├── hero.css
-│   │   ├── knowledge.css
-│   │   ├── main.css
-│   │   ├── support.css
-│   │   └── variables.css
-│   ├── App.tsx
-│   ├── main.tsx
-│   ├── types.ts
-│   └── vite-env.d.ts
-│
-├── .eslintrc.cjs
-├── .gitignore
-├── index.html
-├── package-lock.json
-├── package.json
-├── README.md
-├── tsconfig.json
-├── tsconfig.node.json
-└── vite.config.ts
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-```
-## Usage
+You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
 
-### Navigation
-- **Home**: Introduction to the app and its purpose.
-- **Knowledge:** Tips and information on various everyday topics, such as driving safety.
-- **Support offers:** Provides  available support services, such as counseling or helplines etc..
-- **Downloads:** Various resources that users can download, such as recipes, guides, or informational PDFs.
-- **Contact:** Details about the app's creator and ways to get in touch.
+This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## Contributing
-Contributions are welcome! Please fork the repository and submit pull requests for any enhancements or bug fixes.
+## Learn More
 
-## License
-This project is licensed under the MIT License. See the LICENSE file for details.
+To learn more about Next.js, take a look at the following resources:
 
-## Contact
-For more information, questions, or suggestions, please open an issue or start a discussion in this repository.
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+
+## Deploy on Vercel
+
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
