@@ -148,7 +148,7 @@ export const Footer = () => {
           <a
             rel="noreferrer noopener"
             target="_blank"
-            href="https://protecther.vercel.app/"
+            href="https://protect-her.vercel.app/"
             className="text-primary transition-all border-primary hover:border-b-2"
           >
             ProtectHer
