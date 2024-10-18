@@ -1,30 +1,25 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-import {Home} from "./views/pages/Home/Home";
-import {Header} from "./views/components/Header/Header";
-import {SectionOne} from "./views/pages/SectionOne/SectionOne";
-import {SectionTwo} from "./views/pages/SectionTwo/SectionTwo";
-import {SectionThree} from "./views/pages/SectionThree/SectionThree";
-import {SectionFour} from "./views/components/SectionFour/SectionFour";
-import {SectionFIve} from "./views/pages/SectionFIve/SectionFIve";
-import {SectionSix} from "./views/pages/SectionSix/SectionSix";
-import {Footer} from "./views/components/Footer/Footer";
+import { Route, Routes } from "react-router-dom";
+import Layout from "./components/layout/Layout";
+import Home from "./pages/home/Home";
+import HowToStart from "./pages/how-to-start/HowToStart";
+import OurService from "./pages/our-service/OurService";
+import Technologies from "./pages/technologies/Technologies";
+import Careers from "./pages/careers/Careers";
+import Contact from "./pages/contact/Contact";
 
-function App() {
+export default function App() {
   return (
-    <div>
-        <Header></Header>
-        <Home></Home>
-        <SectionOne/>
-        <SectionTwo></SectionTwo>
-        <SectionThree></SectionThree>
-        <SectionFour></SectionFour>
-        <SectionFIve></SectionFIve>
-        <SectionSix></SectionSix>
-        <Footer></Footer>
-    </div>
+    <>
+      <Layout>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/how-to-start" element={<HowToStart />} />
+          <Route path="/our-service" element={<OurService />} />
+          <Route path="/technologies" element={<Technologies />} />
+          <Route path="/careers" element={<Careers />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+      </Layout>
+    </>
   );
 }
-
-export default App;
