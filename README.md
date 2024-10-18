@@ -1,111 +1,146 @@
-# GoSecure
+# Gender Data Web App
 
+## Overview
+The **Gender Data Gap App** is a comprehensive web application designed to support women* in their daily lives by providing crucial information and a platform for sharing experiences. The app includes sections on everyday knowledge, period-related information. It is built with React and focuses on sustainability and energy efficiency with a dark-themed design.
 
-<h1 align="center"><img width=20% height=50% alt="GoSecure" src="https://github.com/Divijkatyal0406/GoSecure/blob/master/README-images/logo-1.png"></h1>
+## Disclaimer
+Please note that this application is still in development. There are known minor bugs that need to be fixed, and the database integration is not yet completed. I am actively working to address these issues in upcoming updates.
 
-<h1 align="center">🅶🅾🆂🅴🅲🆄🆁🅴 - Women Safety App</h1>
-<!--[![All Contributors](https://img.shields.io/badge/all_contributors-04-orange.svg?style=flat-square)](#contributors-)-->
+## Features
+- **Home**: Introduction to the app and its purpose.
+- **Knowledge:** Tips and information on various everyday topics, such as driving safety.
+- **Support offers:** Provides  available support services, such as counseling or helplines etc..
+- **Downloads:** Various resources that users can download, such as recipes, guides, or informational PDFs.
+- **Contact:** Details about the app's creator and ways to get in touch.
 
-![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
+ ## Installation
+To run this project locally, follow these steps:
 
-<p align="center">
- <img src="https://github.com/Divijkatyal0406/GoSecure/blob/master/README-images/banner.png" width="90%" height="400" />
-</p>
-
-![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
-
-<h2 align="center" id="Inspiration"> :label: Inspiration</h2>
-
-Considering the importance of safety and security of women in India, I wanted to give it a try from my end to address the issue in a simpler and safer way. The app is about safety as well as awareness & makes the user safe & confident. It is easy to use because of it's user friendly and easy to navigate UI. I wanted to give them a tap on the shoulder to keep going and not give up! 
-<br>
-Keeping this mind I developed an application named <b>GoSecure</b>.
-
-![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
-
-<h2 align="center" id="Demo"> 🚀 Demo
-<br>
-
-
-
-https://user-images.githubusercontent.com/81143854/217753445-46a691ae-b430-4cf0-a279-ccbfc4354dae.mp4
-
-
-
-
-
-
-
-![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
-
-<h2 align="center" id="TechStack"> 🧰 Tech Stack
-<br>
-
-```diff
-+ Flutter +
-+ Dart +
-+ Google Map API +
-+ CrimeoMeter API +
-+ Shared Preferences +
-+ SMS Manager API +
-+ Sensor Manager API +
-+ Background Service +
-+ Media player API +
+1. **Clone the repository:**
+```bash
+git clone https://github.com/your-username/gender-data-gap-app.git
 ```
-</h2>
 
-<br>
+3. **Navigate to the project directory:**
+```bash
+cd gender-data-gap-app
+```
+5. **Install the dependencies:**
+```bash
+npm install
+```
 
+6. **Start the development server:**
+```bash
+npm run dev
+```
+## Technologies Used
+- React: JavaScript library for building user interfaces.
+- Vite: Next-generation front-end tool for faster and leaner development.
+- TypeScript: Typed superset of JavaScript that compiles to plain JavaScript.
+- CSS: Styling the application with a focus on a dark, energy-efficient theme.
+- React Router: Library for routing in React applications
 
-![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
+## Directory Structure
+```bash
+gender-data-app/
+│
+├── node_modules/
+│
+├── public/
+│   ├── assets/
+│   │   ├── PeriodenTeeRezept.pdf
+│   │   ├── PeriodTeaRecipe.pdf
+│   │   ├── index.html
+│   │   └── vite.svg
+│
+├── src/
+│   ├── assets/
+│   │   └── react.svg
+│   ├── components/
+│   │   ├── AboutUs.tsx
+│   │   ├── ArticleItem.tsx
+│   │   ├── BlogPosts.tsx
+│   │   ├── BookItem.tsx
+│   │   ├── CategoryList.tsx
+│   │   ├── DisclaimerBanner.tsx
+│   │   ├── DownloadButton.tsx
+│   │   ├── DownloadCard.tsx
+│   │   ├── Footer.tsx
+│   │   ├── FormInput.tsx
+│   │   ├── FormTextarea.tsx
+│   │   ├── Header.tsx
+│   │   ├── HeroElement.tsx
+│   │   ├── MapSupport.tsx
+│   │   ├── MediaTypeList.tsx
+│   │   ├── OutpatientClinicInfo.tsx
+│   │   ├── ScrollToTopButton.tsx
+│   │   ├── SearchBar.tsx
+│   │   ├── Section.tsx
+│   │   ├── Sidebar.tsx
+│   │   ├── SupportCard.tsx
+│   │   └── VideoItem.tsx
+│   ├── data/
+│   │   ├── clinicForVictims.json
+│   │   ├── data.json
+│   │   ├── downloadContent.json
+│   │   └── supportCards.json
+│   ├── hooks/
+│   │   ├── useCategories.ts
+│   │   ├── useContactForm.tsx
+│   │   ├── useDownloadProgress.ts
+│   │   ├── useFilteredContents.ts
+│   │   ├── useScrollToTop.ts
+│   │   ├── useToggleExpand.ts
+│   │   └── useWindowSize.ts
+│   ├── pages/
+│   │   ├── Contact.tsx
+│   │   ├── Downloads.tsx
+│   │   ├── Home.tsx
+│   │   ├── Knowledge.tsx
+│   │   └── Support.tsx
+│   ├── styles/
+│   │   ├── aboutUs.css
+│   │   ├── blogPosts.css
+│   │   ├── button.css
+│   │   ├── contact.css
+│   │   ├── disclaimerBanner.css
+│   │   ├── download.css
+│   │   ├── hero.css
+│   │   ├── knowledge.css
+│   │   ├── main.css
+│   │   ├── support.css
+│   │   └── variables.css
+│   ├── App.tsx
+│   ├── main.tsx
+│   ├── types.ts
+│   └── vite-env.d.ts
+│
+├── .eslintrc.cjs
+├── .gitignore
+├── index.html
+├── package-lock.json
+├── package.json
+├── README.md
+├── tsconfig.json
+├── tsconfig.node.json
+└── vite.config.ts
 
-<br>
+```
+## Usage
 
-<h2 align="center" id="TechStack"> 🤺 Core Features</h2>
+### Navigation
+- **Home**: Introduction to the app and its purpose.
+- **Knowledge:** Tips and information on various everyday topics, such as driving safety.
+- **Support offers:** Provides  available support services, such as counseling or helplines etc..
+- **Downloads:** Various resources that users can download, such as recipes, guides, or informational PDFs.
+- **Contact:** Details about the app's creator and ways to get in touch.
 
-👉 Send alerts by detecting shake frequency of the user.<br>
-👉 Spy camera detector using magnetometer sensors of phone.<br>
-👉 Share location with your selected contacts periodically.<br>
-👉 Women emergency contacts on your fingertips.<br>
-👉 Get fake call instantly or after some delay.<br>
-👉 Scream alert to detect human scream and send alerts accordingly.<br>
-👉 Various articles and self defence techniques to empower women.<br>
-👉 Conversational Al for voice commands processing. You can tap on it and speak.<br>
-*get a fake call now, add contact, police, spy cam detector, send alerts, report, show
-articles, enable siren.....*
-<br>
+## Contributing
+Contributions are welcome! Please fork the repository and submit pull requests for any enhancements or bug fixes.
 
+## License
+This project is licensed under the MIT License. See the LICENSE file for details.
 
-
-![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
-
-## 🔗 Links for project:  
- 
-Download APK : [here](https://drive.google.com/file/d/1wv_ILZ_1aM0QC3-V5RrMzVOiSK3lkX8D/view?usp=sharing)
-
-![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
-
-## 🚩 Features and Interfaces:
-Feature | Images
------------- | -------------
- **Dashboard**  
- It is fast, easy to use, and incredibly convenient with a minimalistic UI! | <img src="https://github.com/Divijkatyal0406/GoSecure/blob/master/README-images/Screenshot%202023-02-08%20190914.png" width="230" height="350">
-**Go Nirbhaya**
-Sends journey alerts periodically with the loved ones! |<img src="https://github.com/Divijkatyal0406/GoSecure/blob/master/README-images/nir-scream.png" width="230" height="350">
-**Emergency contacts**
-Users are provided with various women emergency helplines on their fingertips | <img src="https://github.com/Divijkatyal0406/GoSecure/blob/master/README-images/emer-con.png" width="230" height="350">
-**Safety Pin**
-The flagship feature with which user can set the security pin which can be used to turn off the SOS and send info about false alert |<img src="https://github.com/Divijkatyal0406/GoSecure/blob/master/README-images/safety-pin.png" width="230" height="350">
-**Scream Alert** 
-Detects human scream to send alerts to saved contacts!|<img src="https://github.com/Divijkatyal0406/GoSecure/blob/master/README-images/nir-scream.png" width="230" height="350">
-**LiveSafe**
-Finds and guides user to nearest police stations, hospitals and bus stations |<img src="https://github.com/Divijkatyal0406/GoSecure/blob/master/README-images/live-safe.png" width="230" height="350">
-**Spy Cam Detector**
-Uses magnetometer sensors of the phone to detect any potencial active camera around! |<img src="https://github.com/Divijkatyal0406/GoSecure/blob/master/README-images/spy-cam.png" width="230" height="350">
-**Articles**
-Various motivational articles for women | <img src="https://github.com/Divijkatyal0406/GoSecure/blob/master/README-images/articles.png" width="230" height="350">
-**Self defence**
-Self Defence techniques to empower women! | <img src="https://github.com/Divijkatyal0406/GoSecure/blob/master/README-images/self-defense.png" width="230" height="350">
-**Fake Call**
-Fake call generator to get out of suspectful situation | <img src="https://github.com/Divijkatyal0406/GoSecure/blob/master/README-images/fake-call.png" width="230" height="350">
-**Shake Detector**
-Shake frequency detector to send alerts | <img src="https://github.com/Divijkatyal0406/GoSecure/blob/master/README-images/shake-detect.png" width="230" height="350">
+## Contact
+For more information, questions, or suggestions, please open an issue or start a discussion in this repository.
