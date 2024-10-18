@@ -1,41 +1,39 @@
-//Imports
-//React
-import React, { useState } from 'react';
-//Styles
-import './styles/app.css';
-//Components & Routes
-// import { Loading, Home } from './routes/index';
-import Home from './routes/Home';
-import Loading from './routes/Loading';
-import { BrowserRouter as Router, Route, Routes} from "react-router-dom";
-import Menu from './routes/Menu';
-import { exitContext, welcomingContext } from './utils/context';
-import ExploreButton from './components/ExploreButton';
-import NewHome from './routes/NewHome';
-
+import { About } from "./components/About";
+import { Cta } from "./components/Cta";
+import { FAQ } from "./components/FAQ";
+import { Features } from "./components/Features";
+import { Footer } from "./components/Footer";
+import { Hero } from "./components/Hero";
+import { HowItWorks } from "./components/HowItWorks";
+import { Navbar } from "./components/Navbar";
+import { Newsletter } from "./components/Newsletter";
+import { Pricing } from "./components/Pricing";
+import { ScrollToTop } from "./components/ScrollToTop";
+import { Services } from "./components/Services";
+import { Sponsors } from "./components/Sponsors";
+import { Team } from "./components/Team";
+import { Testimonials } from "./components/Testimonials";
+import "./App.css";
 
 function App() {
-  //states
-  const [welcoming , setWelcoming] = useState<boolean>(true)
-  const [exit , setExit] = useState<boolean>(false)
-  //lifecycle management
-
   return (
-    <div className='app'>
-      <Router>
-        <welcomingContext.Provider value={{ welcoming, setWelcoming }}>
-          <exitContext.Provider value={{ exit, setExit }}>
-        <Routes>
-            <Route path='/home' element={<Home />} />
-            <Route path='/newhome' element={<NewHome />} />
-            <Route path='/' element={<Loading />} />
-            <Route path='/menu' element={<Menu />} />
-            <Route path='/explorebutton' element={<ExploreButton />} />
-        </Routes>
-          </exitContext.Provider>
-        </welcomingContext.Provider>
-      </Router>
-    </div>
+    <>
+      <Navbar />
+      <Hero />
+      <Sponsors />
+      <About />
+      <HowItWorks />
+      <Features />
+      <Services />
+      <Cta />
+      <Testimonials />
+      <Team />
+      <Pricing />
+      <Newsletter />
+      <FAQ />
+      <Footer />
+      <ScrollToTop />
+    </>
   );
 }
 
