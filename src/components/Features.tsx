@@ -9,6 +9,7 @@ import {
 import image from "../assets/growth.png"; // Use images that represent your features
 import image3 from "../assets/reflecting.png";
 import image4 from "../assets/looking-ahead.png";
+import image5 from "../assets/wont-stop.png";
 
 interface FeatureProps {
   title: string;
@@ -39,7 +40,7 @@ const features: FeatureProps[] = [
     title: "Crowd-Sourced Safety Zones",
     description:
       "Who knows best? The crowd. Get the safest route suggestions based on real-time feedback from people on the street. Skip the sketchy lanes.",
-    image: image4, // Reuse or replace with a different image if needed
+    image: image5, // Reuse or replace with a different image if needed
   },
 ];
 
